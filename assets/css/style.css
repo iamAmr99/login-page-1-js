@@ -1,0 +1,26 @@
+body {
+  font-family: "Roboto Slab", serif;
+}
+
+.bg {
+  background-image: url("../imgs/wallpaperflare.com_wallpaper\(2\).jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+input::placeholder {
+  color: white !important;
+  opacity: 0.5 !important;
+}
+h1 {
+  letter-spacing: 3px;
+}
+span {
+  letter-spacing: 2px;
+}

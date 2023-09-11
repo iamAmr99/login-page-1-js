@@ -1,6 +1,6 @@
 nav = document.querySelector('nav')
 loginBtn = document.getElementById('loginBtn')
-subimBtn = document.getElementById('submitBtn')
+submitBtn = document.getElementById('submitBtn')
 
 
 

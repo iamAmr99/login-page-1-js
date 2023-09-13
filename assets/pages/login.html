@@ -25,40 +25,51 @@
   <body class="vh-100 d-flex align-items-center justify-content-center">
     <div class="bg"></div>
     <nav class="bg-black p-2 w-100 position-absolute top-0">
-      <a href="../../index.html"
-        ><i class="fa-solid fa-house fa-xl" style="color: white"></i
+      <a href="../../index.html" title="Home"
+        ><i class="fa-solid fa-house fa-xl text-light"></i
       ></a>
     </nav>
-    <div class="d-flex w-50 h-25 align-items-center justify-content-center">
+    <div
+      class="d-flex align-items-center justify-content-center gap-2 flex-column p-1"
+    >
       <form
-        class="form-control bg-transparent d-flex flex-column align-items-center justify-content-center gap-3 shadow-lg"
+        class="login-form form-control bg-transparent w-100 py-3 d-flex justify-content-center align-items-center gap-3 flex-column"
       >
-        <div class="text-white text-center">
-          <h1 class="fw-bold">-Login-</h1>
-        </div>
-        <div class="input-group w-50">
-          <span class="input-group-text bg-transparent text-white ">
-            <i class="fa-solid fa-user pe-1"></i>
-            username</span
+        <div class="text-center text-light"><h1>-Login-</h1></div>
+        <div class="">
+          <div
+            class="input-group" 
           >
-          <input
-            type="text"
-            class="form-control bg-transparent text-white fw-bold "
-            placeholder="add your username"
-          />
+            <span class="input-group-text bg-transparent text-light "
+              ><i class="fa-solid fa-user mx-1"></i> username</span
+            >
+            <input
+              type="text"
+              title="username"
+              id=""
+              class="text-light bg-transparent form-control"
+              placeholder="add your username"
+            />
+          </div>
         </div>
-        <div class="input-group text-white w-50">
-          <span class="input-group-text bg-transparent text-white">
-            <i class="fa-solid fa-key pe-1"></i> password</span
+        <div class="">
+          <div
+            class="input-group"
           >
-          <input
-            type="text"
-            class="form-control bg-transparent text-white fw-bold"
-            placeholder="add your password"
-          />
+            <span class="input-group-text bg-transparent text-light"
+              ><i class="fa-solid fa-key mx-1"></i> password</span
+            >
+            <input
+              type="password"
+              title="password"
+              id=""
+              class="text-light bg-transparent form-control"
+              placeholder="add your password"
+            />
+          </div>
         </div>
-        <div class="text-center text-white">
-          <span>Don't have a user?! <a class="text-white" href="signup.html">signup</a> </span>
+        <div class="text-center">
+          <span class="text-light ">don't have a username <a href="signup.html" class="link-light">signup</a> </span>
         </div>
       </form>
     </div>

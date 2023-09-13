@@ -5,7 +5,7 @@ body {
 .bg {
   background-image: url("../imgs/wallpaperflare.com_wallpaper\(2\).jpg");
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
@@ -18,9 +18,13 @@ input::placeholder {
   color: white !important;
   opacity: 0.5 !important;
 }
-h1 {
+.main-form>button {
+  padding: 7px;
   letter-spacing: 3px;
 }
-span {
-  letter-spacing: 2px;
+.login-form h1,.login-form span {
+  letter-spacing: 1px;
+}
+.signup-form h1,.signup-form span {
+  letter-spacing: 1px;
 }

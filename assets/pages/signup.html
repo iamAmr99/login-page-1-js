@@ -14,7 +14,7 @@
     <!-- ? fonts -->
     <link
       rel="stylesheet"
-      href="../node_modules/@fortawesome/fontawesome-free/js/all.min.js"
+      href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css"
     />
     <link
       rel="stylesheet"
@@ -24,46 +24,54 @@
   </head>
   <body class="vh-100 d-flex align-items-center justify-content-center">
     <div class="bg"></div>
-    <nav class="bg-black p-2 w-100 position-absolute top-0">
-      <a href="../../index.html"
-        ><i class="fa-solid fa-house fa-xl" style="color: white"></i
+    <nav class="bg-black p-2 w-100 position-absolute top-0 d-flex justify-content-between align-items-center px-3">
+      <a href="../../index.html" title="Home"
+        ><i class="fa-solid fa-house fa-xl text-light"></i
       ></a>
+      <button
+        type="button"
+        title="logout"
+        class="btn btn-light"
+      >logout</button>
     </nav>
     <div class="d-flex p-1 h-75 align-items-center justify-content-center">
       <form
         class="signup-form form-control bg-transparent d-flex gap-3 flex-column align-items-center justify-content-center shadow-lg"
       >
-          <div class="text-white text-center w-100">
-            <h1 class="fw-bold">-Sign up-</h1>
-          </div>
-          <div class="input-group ">
-            <span class="input-group-text bg-transparent text-white">
-              <i class="fa-solid fa-user pe-1"></i>
-              first name</span
-            >
-            <input
-              type="text"
-              class="form-control bg-transparent text-white fw-bold"
-              placeholder="add your  first name"
-            />
-          </div>
-          <div class="input-group">
-            <span class="input-group-text bg-transparent text-white">
-              <i class="fa-solid fa-user pe-1"></i>
-              last name</span
-            >
-            <input
-              type="text"
-              class="form-control bg-transparent text-white fw-bold"
-              placeholder="add your last name"
-            />
-          </div>
+        <div class="text-white text-center w-100">
+          <h1 class="fw-bold">-Sign up-</h1>
+        </div>
+        <div class="input-group">
+          <span class="input-group-text bg-transparent text-white">
+            <i class="fa-solid fa-user pe-1"></i>
+            first name</span
+          >
+          <input
+            type="text"
+            id="firstName"
+            class="form-control bg-transparent text-white fw-bold"
+            placeholder="add your  first name"
+          />
+        </div>
+        <div class="input-group">
+          <span class="input-group-text bg-transparent text-white">
+            <i class="fa-solid fa-user pe-1"></i>
+            last name</span
+          >
+          <input
+            type="text"
+            id="lastName"
+            class="form-control bg-transparent text-white fw-bold"
+            placeholder="add your last name"
+          />
+        </div>
         <div class="input-group text-white">
           <span class="input-group-text bg-transparent text-white mx-auto">
             <i class="fa-solid fa-user pe-1"></i> username</span
           >
           <input
             type="text"
+            id="userName"
             class="form-control bg-transparent text-white fw-bold"
             placeholder="add your username"
           />
@@ -74,10 +82,18 @@
           >
           <input
             type="password"
+            id="userPass"
             class="form-control bg-transparent text-white fw-bold"
             placeholder="add your password"
           />
         </div>
+        <button
+          type="button"
+          id="submitBtn"
+          class="btn btn-outline-light ms-auto px-4"
+        >
+          Sign up
+        </button>
         <div class="text-center text-white">
           <span
             >already have a user?!

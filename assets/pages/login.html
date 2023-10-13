@@ -14,7 +14,7 @@
     <!-- ? fonts -->
     <link
       rel="stylesheet"
-      href="../node_modules/@fortawesome/fontawesome-free/js/all.min.js"
+      href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css"
     />
     <link
       rel="stylesheet"
@@ -24,52 +24,64 @@
   </head>
   <body class="vh-100 d-flex align-items-center justify-content-center">
     <div class="bg"></div>
-    <nav class="bg-black p-2 w-100 position-absolute top-0">
+    <nav class="bg-black p-2 w-100 position-absolute top-0 d-flex justify-content-between align-items-center px-3">
       <a href="../../index.html" title="Home"
         ><i class="fa-solid fa-house fa-xl text-light"></i
       ></a>
+      <button
+        type="button"
+        title="logout"
+        class="btn btn-light"
+      >logout</button>
     </nav>
     <div
       class="d-flex align-items-center justify-content-center gap-2 flex-column p-1"
     >
       <form
-        class="login-form form-control bg-transparent w-100 py-3 d-flex justify-content-center align-items-center gap-3 flex-column"
+        class="login-form form-control bg-transparent w-100 py-3 d-flex justify-content-center align-items-center gap-3 flex-column shadow-lg"
       >
         <div class="text-center text-light"><h1>-Login-</h1></div>
         <div class="">
-          <div
-            class="input-group" 
-          >
-            <span class="input-group-text bg-transparent text-light "
+          <div class="input-group">
+            <span class="input-group-text bg-transparent text-light"
               ><i class="fa-solid fa-user mx-1"></i> username</span
             >
             <input
               type="text"
               title="username"
-              id=""
+              id="userName"
               class="text-light bg-transparent form-control"
               placeholder="add your username"
             />
           </div>
         </div>
         <div class="">
-          <div
-            class="input-group"
-          >
+          <div class="input-group">
             <span class="input-group-text bg-transparent text-light"
               ><i class="fa-solid fa-key mx-1"></i> password</span
             >
             <input
               type="password"
               title="password"
-              id=""
+              id="userPass"
               class="text-light bg-transparent form-control"
               placeholder="add your password"
             />
           </div>
         </div>
+        <button
+          type="button"
+          id="loginBtn"
+          title="login"
+          class="btn btn-outline-light ms-auto px-4"
+        >
+          Login
+        </button>
         <div class="text-center">
-          <span class="text-light ">don't have a username <a href="signup.html" class="link-light">signup</a> </span>
+          <span class="text-light"
+            >don't have a username
+            <a href="signup.html" class="link-light">signup</a>
+          </span>
         </div>
       </form>
     </div>

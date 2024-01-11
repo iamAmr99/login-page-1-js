@@ -3,12 +3,12 @@ body {
 }
 
 .bg {
-  background-image: url("../imgs/wallpaperflare.com_wallpaper\(2\).jpg");
-  background-size: cover;
-  background-position: center;
+  background-image: url("../imgs/BG.jpg");
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   position: absolute;
   top: 0;
   left: 0;
@@ -18,13 +18,15 @@ input::placeholder {
   color: white !important;
   opacity: 0.5 !important;
 }
-.main-form>button {
+.main-form > button {
   padding: 7px;
   letter-spacing: 3px;
 }
-.login-form h1,.login-form span {
+.login-form h1,
+.login-form span {
   letter-spacing: 1px;
 }
-.signup-form h1,.signup-form span {
+.signup-form h1,
+.signup-form span {
   letter-spacing: 1px;
 }
